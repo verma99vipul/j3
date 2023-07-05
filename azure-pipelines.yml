@@ -8,7 +8,10 @@ parameters:
     values:
       - windows-latest
       - ubuntu-latest
-steps:
-- script: echo Hello, world!
-  displayName: 'Run-Time parameters are defined for pool'
-
+stages:
+  - stage: Build
+    jobs:
+      - job: BuildJob
+        pool:
+         vmImage: ${{parameters.Image}}
+     
