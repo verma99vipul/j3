@@ -2,7 +2,7 @@ trigger: none
 
 parameters:
   - name: Image
-    displayName: PoolImage
+    displayName: Pool Image
     default: macOS-latest
     type: string
     values:
