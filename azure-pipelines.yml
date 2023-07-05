@@ -1,0 +1,14 @@
+trigger: none
+
+parameters:
+  - name: Image
+    displayName: PoolImage
+    default: macOS-latest
+    type: string
+    values:
+      - windows-latest
+      - ubuntu-latest
+steps:
+- script: echo Hello, world!
+  displayName: 'Run-Time parameters are defined for pool'
+
